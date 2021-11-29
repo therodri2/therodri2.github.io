@@ -31,7 +31,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Madrid
 
 include:
   - _pages
@@ -58,22 +58,20 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "0xShroudri"
+  avatar : "/assets/images/pizza.jpeg"
+  bio    : "A hacker's blog"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://"
+    - label: "HackTheBox"
+      icon: "fab fa-fw fa-link"
+      url: "https://hackthebox.eu/"
+    - label: "TryHackMe"
+      icon: "fab fa-fw fa-lnk"
+      url: "https://tryhackme.com/"
+
 
 footer:
   links:
