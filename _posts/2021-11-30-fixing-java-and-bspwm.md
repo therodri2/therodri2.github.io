@@ -7,6 +7,7 @@ tags:
   - bspwm
   - java
   - burpsuite
+share: false
 ---
 
 ## The problem
