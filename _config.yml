@@ -65,10 +65,10 @@ author:
       url: "https://"
     - label: "HackTheBox"
       icon: "fas fa-cube"
-      url: "https://hackthebox.eu/"
+      url: "https://app.hackthebox.com/profile/316058"
     - label: "TryHackMe"
-      icon: "fab fa-fw fa-lnk"
-      url: "https://tryhackme.com/"
+      icon: "fas fa-cloud"
+      url: "https://tryhackme.com/p/therodri2"
 
 
 footer:
@@ -78,10 +78,10 @@ footer:
       url: "https://"
     - label: "HackTheBox"
       icon: "fas fa-cube"
-      url: "https://hackthebox.eu/"
+      url: "https://app.hackthebox.com/profile/316058"
     - label: "TryHackMe"
-      icon: "fab fa-fw fa-lnk"
-      url: "https://tryhackme.com/"
+      icon: "fas fa-cloud"
+      url: "https://tryhackme.com/p/therodri2"
 
 defaults:
   # _posts
