@@ -77,7 +77,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://"
     - label: "HackTheBox"
-      icon: "fab fa-fw fa-link"
+      icon: "fal fa-cube"
       url: "https://hackthebox.eu/"
     - label: "TryHackMe"
       icon: "fab fa-fw fa-lnk"
