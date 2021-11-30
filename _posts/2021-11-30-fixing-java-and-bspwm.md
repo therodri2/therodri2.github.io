@@ -57,6 +57,8 @@ Now, if you use the shortcuts to launch the applications, the variable will be e
 
 And voila, stuff works again
 
+![Sample1](https://imgur.com/qlq8dUB.png)
+
 
 <img width=100% src="https://imgur.com/qlq8dUB.png">
 <img width=100% src="https://imgur.com/fF05LGD.png">
