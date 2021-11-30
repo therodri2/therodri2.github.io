@@ -2,12 +2,13 @@
 title: "Fixing Java and BSPWM"
 date: 2021-11-30T22:20:30+01:00
 categories:
-  - guides
+  - Guides
 tags:
-  - bspwm
-  - java
-  - burpsuite
+  - Bspwm
+  - Java
 share: false
+#layout: single
+classes: wide
 ---
 
 ## The problem
