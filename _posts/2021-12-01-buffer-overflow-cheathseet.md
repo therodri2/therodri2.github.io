@@ -13,14 +13,14 @@ classes: wide
 
 ### After getting control of EIP
 
-Set a **working folder** <br>
+Set a **working folder** </br>
 `!mona config -set workingfolder C:\Users\shroudri\%p`
 
 
-Generate bytearray <br>
+Generate bytearray  
 `!mona bytearray`
 
-Generate bytearray excluding a certain badchar <br>
+Generate bytearray excluding a certain badchar\
 `!mona bytearray -cpb "\x00"` <br>
 `!mona bytearray -cpb "\x00\x0a\etc"`
 
