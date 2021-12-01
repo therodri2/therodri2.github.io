@@ -11,11 +11,16 @@ share: false
 classes: wide
 ---
 
-### After getting control of EIP
+### Get control of EIP
+First, lets use some [skeletons](https://github.com/acc3ssp0int-official/buffer-overflow-skeleton-scripts) to overwrite the EIP  
 
+Then, let's generate a pattern to identify the offset  
+`Todo: complete msfpatterncreate command and msfpatternfind`
+
+
+### After getting control of EIP
 Set a **working folder**  
 `!mona config -set workingfolder C:\Users\shroudri\%p`
-
 
 Generate bytearray  
 `!mona bytearray`
