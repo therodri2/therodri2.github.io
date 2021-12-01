@@ -18,7 +18,7 @@ Set a **working folder**
 
 
 Generate bytearray
-`!mona bytearray`
+``!mona bytearray``
 
 Generate bytearray excluding a certain badchar
 `!mona bytearray -cpb "\x00"`
