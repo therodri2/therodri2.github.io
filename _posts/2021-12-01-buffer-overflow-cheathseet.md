@@ -13,7 +13,7 @@ classes: wide
 
 ### After getting control of EIP
 
-Set a **working folder** </br>
+Set a **working folder**  
 `!mona config -set workingfolder C:\Users\shroudri\%p`
 
 
