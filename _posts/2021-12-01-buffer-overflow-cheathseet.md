@@ -10,9 +10,7 @@ share: false
 #layout: single
 classes: wide
 ---
-
-
-### Get control of EIP
+### Take control of EIP
 First, lets use some [skeletons](https://github.com/acc3ssp0int-official/buffer-overflow-skeleton-scripts) to overwrite the EIP  
 
 Then, let's generate a pattern to identify the offset  
