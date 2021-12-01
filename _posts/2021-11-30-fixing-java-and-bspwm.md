@@ -11,7 +11,7 @@ share: false
 classes: wide
 excerpt_separator: <!--more-->
 ---
-###### Java and BSPWM don't get along well with eath other. This guide may help you troubleshoot a problem I encountered using Kali 2020.4
+Java and BSPWM don't get along well with eath other. This guide may help you troubleshoot a problem I encountered using Kali 2020.4
 <!--more-->
 
 ## The problem
