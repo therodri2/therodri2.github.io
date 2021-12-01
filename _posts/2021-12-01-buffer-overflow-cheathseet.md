@@ -9,7 +9,12 @@ tags:
 share: false
 #layout: single
 classes: wide
+excerpt_separator: <!--more-->
 ---
+A handly list of the most typical commands used in buffer overflows.
+
+<!--more-->
+
 ### Take control of EIP
 First, lets use some [skeletons](https://github.com/acc3ssp0int-official/buffer-overflow-skeleton-scripts) to overwrite the EIP  
 

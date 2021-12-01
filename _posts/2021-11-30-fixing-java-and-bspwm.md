@@ -9,7 +9,10 @@ tags:
 share: false
 #layout: single
 classes: wide
+excerpt_separator: <!--more-->
 ---
+Java and BSPWM don't get along well with eath other. This guide may help you troubleshoot a problem I encountered using Kali 2020.4
+<!--more-->
 
 ## The problem
 If any of you is using BSPWM and tries to open any java-based application, you will likely encounter some GUI errors.
