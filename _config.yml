@@ -68,7 +68,7 @@ author:
       url: "https://app.hackthebox.com/profile/316058"
     - label: "TryHackMe"
       icon: "fas fa-cloud"
-      url: "https://tryhackme.com/p/therodri2"
+      url: "https://tryhackme.com/p/shroudri"
 
 
 footer:
@@ -81,7 +81,7 @@ footer:
       url: "https://app.hackthebox.com/profile/316058"
     - label: "TryHackMe"
       icon: "fas fa-cloud"
-      url: "https://tryhackme.com/p/therodri2"
+      url: "https://tryhackme.com/p/shroudri"
 
 defaults:
   # _posts
