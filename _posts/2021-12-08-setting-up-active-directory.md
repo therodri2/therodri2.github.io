@@ -9,7 +9,7 @@ tags:
   - OSCP
 share: false
 #layout: single
-classes: wide
+#classes: wide
 excerpt_separator: <!--more-->
 ---
 
@@ -34,7 +34,7 @@ Now that Active Directory has become part of the OSCP exam, it has gained even m
   - [Join the domain](#join-the-domain)
   - [Log into the domain](#logging-into-the-domain)
   <br/>
-  
+
 
 # Setting up the Domain Controller
 
