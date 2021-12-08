@@ -14,10 +14,27 @@ excerpt_separator: <!--more-->
 ---
 
 Now that Active Directory has become part of the OSCP exam, it has gained even more interest in the pentesters world. Setting the whole thing up is not too complicated, but it can be intimidating if you don't have much experience with Windows Server. Hopefully, this post will guide you through the installation so that you can have your own lab. In further posts, I want to go through some attacks, although this one is just for the installation. <!--more-->
-
 <br/>
 
-
+# Index
+- [Setting up the Domain Controller](#setting-up-the-domain-controller)
+  - [Preface](#preface)
+  - [Download Windows Server](#download-windows-server)
+  - [Windows Server Installation](#windows-server-installation)
+  - [Active Directory Installation](#active-directory-installation)
+  - [Creating the Domain](#creating-the-domain)
+  - [Renaming the computer](#renaming-computer)
+  - [Adding ourselves as Domain Controller](#adding-ourselves-as-domain-controller)
+  - [Creating domain users](#creating-users-in-the-domain)
+  - [Adding users to a group](#adding-user-to-a-group)
+- [Setting up a Client Machine](#setting-up-a-client-machine)
+  - [Installing Windows Enterprise](#installing-windows-enterprise)
+  - [Renaming the computer](#renaming-the-computer)
+  - [Configure DNS](#configure-dns)
+  - [Join the domain](#join-the-domain)
+  - [Log into the domain](#logging-into-the-domain)
+  <br/>
+  
 
 # Setting up the Domain Controller
 
@@ -30,11 +47,11 @@ Please note that being a Domain Admin is different from being a Local Admin. Dom
 
 #### Preface
 This will be a Formula-1-themed domain. The accounts will be set up as follows:
-```bash
-Administrator:P@$$w0rd!		# Domain admin
-M.Masi:Password1			# Domain admin too
-M.Verstappen:Jasmine1		# Domain user and local administrator of machine#1
-L.Hamilton:Welcome1			# Domain user
+```markdown
+Administrator:P@$$w0rd!   # Domain Admin
+M.Masi:Password1          # Domain admin too
+M.Verstappen:Jasmine1     # Domain user and local administrator of machine#1
+L.Hamilton:Welcome1       # Domain user
 ```
 <br/>
 More information on the domain:
@@ -44,7 +61,7 @@ Domain name: fia.local
 Computer name of the domain controller: DC-Server
 ```
 
-#### Download
+#### Download Windows Server
 Microsoft provides an *evaluation* Windows Server ISO that we can use for free. It's limited to 180 days, but that's plenty of time for us to play with it. Anyway, if we run out of time, we can always reinstall it.
 
 In this case, I will be using Windows Server 2022.
@@ -158,7 +175,7 @@ We'll do the same for Max Verstappen and Lewis Hamilton.
 
 
 # Setting up a client machine
-###### Installing Windows
+###### Installing Windows Enterprise
 Again, we can use Microsoft Evaluation center to download an iso that we can use for free for 180 days. This time, we are looking for a Windows 10 Enterprise Evaluation, which we can find [here](https://www.microsoft.com/es-es/evalcenter/evaluate-windows-10-enterprise)
 
 The installation process is again straight forward until you reach the following screen: 
@@ -175,7 +192,7 @@ Fill in the password, security questions and try to skip all the optional stuff 
 
 Install Guest Additions (or the equivalent) and you will have a fully functional Client Computer.
 
-###### Renaming computer
+###### Renaming the computer
 Again, we want to rename computer. Go to This PC -> Properties -> And change the computer name just like we did before. This will allow for easier recon during our pentesting process.
 
 
