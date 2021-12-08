@@ -57,11 +57,10 @@ Run the downloaded iso with your preferred virtualization software. I will be us
 The installation process is very straight forward. I'm pretty sure all of you is familiar with installing Windows so I'm not going to really give more detail on that. The only thing that I really want to point is to **make sure to select the Desktop Experience option**. Otherwise, we won't have any interface and we'll have to do everything from a shell.
 
 ![](/assets/images/activedirectory/install1.png)
-![[/assets/images/activedirectory/install1.png]]
-![[install2_pwd.png]]
+![](/assets/images/activedirectory/install2_pwd.png)
 
 And voilà! That's Windows Server installed.
-![[install3-success.png]]
+![](/assets/images/activedirectory/install3-success.png)
 
 Time to install Guest Additions and we have a machine ready to use. If you don't know how to install it, there are tons of tutorials out there. It's out of the scope of this guide.
 
@@ -70,24 +69,27 @@ So far, we have only installed Windows Server, but now we have to install Active
 
 Click the Windows icon on the taskbar and open **Server Manager**. This is what it looks like:
 
-![[srv1.png]]
+![](/assets/images/activedirectory/srv1.png)
 
 This is where we will administrate the whole domain. 
 
 ###### Creating the domain
 Click on "Add roles and features" and follow these steps.
 
-![[srv2.png]]![[srv3.png]]![[srv4.png]]
+![](/assets/images/activedirectory/srv2.png)
+![](/assets/images/activedirectory/srv3.png)
+![](/assets/images/activedirectory/srv4.png)
+
 
 Make sure to install:
 -> Active Directory Domain Services
 -> DNS Server
 
-![[srv5.png]]
+![](/assets/images/activedirectory/srv5.png)
 
 The Domain will start getting installed. 
 
-![[srv6.png]]
+![](/assets/images/activedirectory/srv6.png)
 
 
 ###### Renaming computer
@@ -102,11 +104,11 @@ Make sure you have rebooted at least once after changing the computer name.
 
 This is called *Promoting to domain controller*. We can do it by clicking on the alert button and selecting the option. It's very descriptive.
 
-![[srv7-promote.png]]
+![](/assets/images/activedirectory/srv7-promote.png)
 
 We will create a new forest where we will specify de details that I provided above.
 
-![[srv8-forest.png]]
+![](/assets/images/activedirectory/srv8-forest.png)
 
 It will ask for some password. We will choose `P@$$w0rd!` again, since it is for administrative tasks.
 
@@ -120,7 +122,7 @@ After upgrading to Domain Controller, the system will reboot itself.
 
 After reboot, we can see that we are logging in to the domain, instead of logging in to the local machine.
 
-![[login1.png]]
+![](/assets/images/activedirectory/login1.png)
 
 <br/>
 
@@ -131,14 +133,15 @@ This time we are going to create the domain users, so that users (employees) can
 
 For that, we open **Server Manager -> Tools -> Active Directory Users and Computers**. A Window will pop up, and we will browse to fia.local -> Users
 
-![[users1.png]]
+![](/assets/images/activedirectory/users1.png)
 
 Right-click an empty part of the screen and select New -> User. This is where we will provide all the basic information about the user. For instance, I'm going to create Michael Masi's user. 
 
-![[users2.png]]
+![](/assets/images/activedirectory/users2.png)
+
 
 Change the default options to your liking:
-![[user3.png]]
+![](/assets/images/activedirectory/user3.png)
 
 And that get's the user created. But remember, Michael Masi is a domain admin aswell, so we must add him to the **Domain Administrators group**.
 
@@ -147,7 +150,7 @@ Right click on the user -> Properties -> Member Of -> Add -> `group name` -> App
 
 In this case, group name is Domain Admins
 
-![[users4.png]]
+![](/assets/images/activedirectory/users4.png)
 
 We'll do the same for Max Verstappen and Lewis Hamilton.
 <br/>
@@ -160,14 +163,15 @@ Again, we can use Microsoft Evaluation center to download an iso that we can use
 
 The installation process is again straight forward until you reach the following screen: 
 
-![[client1.png]]
+![](/assets/images/activedirectory/client1.png)
 
 We want to click on "Domain join instead" so we can join the domain we've previously created.
 
-![[client2.png]]
+![](/assets/images/activedirectory/client2.png)
 
 Fill in the password, security questions and try to skip all the optional stuff Microsoft tries to install in your computer. Sooner than later you will end up with a screen like this:
-![[client3.png]]
+![](/assets/images/activedirectory/client3.png)
+
 
 Install Guest Additions (or the equivalent) and you will have a fully functional Client Computer.
 
@@ -182,7 +186,7 @@ Go to Control Panel -> Network and Sharing Center -> Click Ethernet -> Propertie
 
 We want to set up the fia.local domain with the IP of the Domain Controller. In my case, the Domain Controller is at 192.168.0.26
 
-![[client6.png]]
+![](/assets/images/activedirectory/client6.png)
 
 
 ###### Join the domain
@@ -192,8 +196,10 @@ It's time to join the domain!
 
 Go to **This PC -> Properties -> Rename this PC (Advanced) -> Change... -> Member of DOMAIN -> fia.local**
 
-![[client4.png]]
-![[client5.png]]
+![](/assets/images/activedirectory/client4.png)
+![](/assets/images/activedirectory/client5.png)
+
+
 
 It will ask the namne and password of the account with permission to join the domain. Here, we need to provide the username and password specified in the Server Manager previously. In this case, it will be `m.verstappen:Jasmine1`. 
 
@@ -204,8 +210,9 @@ Click "other user" and provide the Active Directory credentials.
 
 Note that you can read "Sign in to: FIA", which confirms that we are logging into the domain.
 
-![[client7.png]]
+![](/assets/images/activedirectory/client7.png)
+
 
 That's it! We are inside the domain! Let's confirm it with a *whoami* command.
 
-![[client8.png]]
+![](/assets/images/activedirectory/client8.png)
