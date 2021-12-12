@@ -1,5 +1,5 @@
 ---
-title: "Setting up an Active Directory Lab"
+title: "[AD 0] Setting up an Active Directory Lab"
 date: 2021-12-08T00:20:30+01:00
 categories:
   - Guides
