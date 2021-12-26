@@ -58,9 +58,8 @@ plugins:
 author:
   name   : "0xShroudri"
   avatar : "/assets/images/pizza.jpeg"
-  bio    : |
-    A hacker's blog
-    eJPT
+  bio    : "A hacker's blog \n eJPT"
+
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
