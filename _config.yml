@@ -69,6 +69,9 @@ author:
     - label: "TryHackMe"
       icon: "fas fa-cloud"
       url: "https://tryhackme.com/p/shroudri"
+    - label: "eJPT"
+      icon: "fas fa-file"
+      #url: "https://tryhackme.com/p/shroudri"
 
 
 footer:
@@ -82,6 +85,7 @@ footer:
     - label: "TryHackMe"
       icon: "fas fa-cloud"
       url: "https://tryhackme.com/p/shroudri"
+      
 
 defaults:
   # _posts
