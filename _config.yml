@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "0xShroudri"
   avatar : "/assets/images/pizza.jpeg"
-  bio    : >
+  bio    : |
     A hacker's blog
     eJPT
   links:
