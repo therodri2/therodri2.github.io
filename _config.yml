@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "0xShroudri"
   avatar : "/assets/images/pizza.jpeg"
-  bio    : "A hacker's blog"
+  bio    : "A hacker's blog - eJPT"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -68,9 +68,6 @@ author:
       url: "https://app.hackthebox.com/profile/316058"
     - label: "TryHackMe"
       icon: "fas fa-cloud"
-      url: "https://tryhackme.com/p/shroudri"
-    - label: "eJPT"
-      icon: "fas fa-file"
       url: "https://tryhackme.com/p/shroudri"
 
 
