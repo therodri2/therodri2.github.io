@@ -34,6 +34,7 @@ All that you need to know is covered in INE's free PTS path. They teach you all 
 
 The only thing that I found a bit misleading is the networking / routing part. The labs are slightly different from the eJPT exam. I got stuck there for a couple hours, until I thought about what kind of devices do you need in a network to be able to route to different networks. But, apart from that, the experience with INE is very positive and I'm even consiering purchasing a month or two before attempting eCPPTv2.
 
+*Update*: I've just realized that, in order to access labs, you need a Premium (not a monthly) suscripton to INE. Keep that in mind if you are thinking about doing the same!
 ## Useful tools and commands
 - Smbmap, smbclient, enum4linux, crackmapexec
 - Hydra 
