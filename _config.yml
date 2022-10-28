@@ -18,7 +18,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   CTFs writeups, tips and tricks, useful resources and walkthroughs.
 twitter_username: #username
-github_username: therodri2
+github_username: shroudri
 minimal_mistakes_skin: contrast
 search: true
 
@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "0xShroudri"
   avatar : "/assets/images/pizza.jpeg"
-  bio    : "A hacker's blog \n eJPT"
+  bio    : "My adventures on cybersec"
 
   links:
     - label: "GitHub"
